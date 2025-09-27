@@ -8,8 +8,7 @@
 
   <div class="catalog">
     <div class="item">
-      <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7b43081a1b.png<!DOCTYPE html>
-" width="150">
+      <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7b43081a1b.png" width="150">
       <p>Фруктовий торт</p>
       <p>269 грн</p>
     </div>
@@ -42,6 +41,18 @@
       <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7b56c76da1.png" width="150">
       <p>Асорті</p>
       <p>250 грн</p>
+
+        <div class="item">
+      <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7e213aea8d.png" width="150">
+      <p>Шоколадний бум</p>
+      <p>328 грн</p>
+
+       <div class="item">
+      <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7e21ba532c.png" width="150">
+      <p>Торт ніч</p>
+      <p>287 грн</p>
+
+    </div>
     </div>
   </div>
 </body>
