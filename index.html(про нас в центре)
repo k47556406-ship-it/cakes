@@ -63,7 +63,7 @@
             position: relative;
             width: 350px;
         }
-
+        
         .cake img {
             width: 100%;
             height: auto;
@@ -115,7 +115,7 @@
         .shopping-cart:hover {
             opacity: 0.8;
         }
-
+        
         /* Виправлення: видалено дублюючі теги <style> та <body> */
     </style>
 </head>
@@ -198,7 +198,7 @@
             }
         </style>
     </div>
-
+    
 
     <div class="catalog">
         <div class="item">
@@ -357,6 +357,12 @@
             transform: scale(1.1);
             background-color: #ffcccc;
         }
+        
+        
+        .social-icon img {
+  width: 24px;
+  height: 24px;
+}
     </style>
 
     <div class="top-section">
@@ -380,10 +386,16 @@
         <p>Вул. Миру 69<br>+380 68 163 45 42</p>
 
         <div class="social-icons">
-            <a class="social-icon" href="https://facebook.com" target="_blank" title="Facebook">📘</a>
-            <a class="social-icon" href="https://instagram.com" target="_blank" title="Instagram">📷</a>
-            <a class="social-icon" href="https://t.me/yourtelegram" target="_blank" title="Telegram">📲</a>
-        </div>
+  <a class="social-icon" href="https://facebook.com" target="_blank" title="Facebook">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+  </a>
+  <a class="social-icon" href="https://instagram.com" target="_blank" title="Instagram">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+  </a>
+  <a class="social-icon" href="https://t.me/yourtelegram" target="_blank" title="Telegram">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" />
+  </a>
+</div>
     </div>
 </div>
 
@@ -400,7 +412,7 @@
             cartButton.addEventListener('click', function() {
                 // Виконуємо перенаправлення на інший сайт у поточній вкладці
                 window.location.href = checkoutURL;
-
+                
                 // АБО, якщо ви хочете, щоб сайт відкрився у НОВІЙ вкладці:
                 // window.open(checkoutURL, '_blank');
             });
