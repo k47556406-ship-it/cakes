@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформлення Замовлення - Vash-Sait-Zakaza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fcefe7; /* Світло-рожевий фон */
+            color: #4a2c2a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .checkout-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 450px;
+            width: 90%;
+            text-align: center;
+        }
+        .checkout-container h1 {
+            color: #a36f6f;
+            margin-bottom: 25px;
+            font-size: 26px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .submit-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #b38b79;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+        .submit-button:hover {
+            background-color: #8c5d5d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="checkout-container">
+        <h1>Ваші контактні дані та доставка 🚚</h1>
+        
+        <form action="/submit-order" method="POST"> 
+            
+            <div class="form-group">
+                <label for="phone">Номер телефону (для зв'язку)</label>
+                <input type="tel" id="phone" name="phone" placeholder="+380 XX XXX XX XX" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Адреса доставки (місто, вулиця, будинок)</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Ваше ім'я</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <button type="submit" class="submit-button">ПІДТВЕРДИТИ ЗАМОВЛЕННЯ</button>
+        </form>
+        
+        <p style="margin-top: 20px; font-size: 14px; color: #777;">Менеджер зв'яжеться з вами для уточнення деталей.</p>
+    </div>
+
+</body>
+</html>
