@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torts.ua</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f7e6d2; /* Light peach background */
+            color: #4a2c2a;
+        }
+        .header {
+            background-color: #b38b79;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+        .header a:hover {
+            background-color: #8c5d5d;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        /* ... Існуючі стилі ... */
+        .main-content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .content-box {
+            background-color: #fcefe7; /* Light pinkish box */
+            border-radius: 50px;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .heading-home {
+            font-size: 28px;
+            font-weight: bold;
+            color: #a36f6f;
+            margin-bottom: 20px;
+        }
+        .cakes-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .cake {
+            position: relative;
+            width: 350px;
+        }
+
+        .cake img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        .tag {
+            position: absolute;
+            top: -20px;
+            right: 0;
+            background-color: #a36f6f;
+            color: white;
+            padding: 5px 15px;
+            transform: rotate(15deg);
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        .new-products {
+            font-size: 40px;
+            font-style: italic;
+            color: #a36f6f;
+            margin-bottom: 10px;
+        }
+        .slogan {
+            font-size: 28px;
+            font-style: italic;
+            color: #4a2c2a;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .nav-link.active {
+            background-color: #fff;
+            color: #b38b79;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        /* Додано стиль для візуалізації клікабельності кошика */
+        .shopping-cart { 
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .shopping-cart:hover {
+            opacity: 0.8;
+        }
+
+        /* Виправлення: видалено дублюючі теги <style> та <body> */
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">TORTS.UA</div>
+        <nav class="nav-links">
+            <a href="#" class="nav-link active">головна</a>
+            <a href="#" class="nav-link">каталог</a>
+            <a href="#" class="nav-link">замовити</a>
+            <a href="#" class="nav-link">про нас</a>
+        </nav>
+       <div class="shopping-cart" id="cart-button">&#128722;</div>
+    </header>
+
+    <div class="main-content">
+        <div class="heading-home">Головна</div>
+        <div class="content-box">
+            <div class="cakes-container">
+                <div class="cake">
+                    <img src="https://learn.logikaschool.com/uploads/student/2899059/68d7e5cee5bd3.png" alt="cake with butter fly">
+                </div>
+                <div class="cake">
+                    <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7e6910e9f9.png" alt="Black marble cake">
+                    <span class="tag">Чорний мармур</span>
+                </div>
+                <div class="cake">
+                    <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7e64ebc5ab.png" alt="Pink cake with flowers">
+                </div>
+            </div>
+            <h2 class="new-products">НОВИНКИ</h2>
+            <p class="slogan">Якість-основа нашої роботи</p>
+        </div>
+    </div>
+    <h2>Каталог</h2>
+
+    <div class="catalog-styles-wrapper">
+        <style>
+            /* ... CSS для каталогу ... */
+            body {
+                /* ... вже визначено вище ... */
+            }
+            h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #5c3d2e;
+            }
+            .catalog {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 20px;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .item {
+                background: #fff;
+                border-radius: 10px;
+                padding: 15px;
+                text-align: center;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+                transition: transform 0.2s ease;
+            }
+            .item:hover {
+                transform: scale(1.05);
+            }
+            .item img {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+            .item p {
+                margin: 8px 0;
+                font-size: 16px;
+            }
+            .item p:last-child {
+                font-weight: bold;
+                color: #c0392b;
+            }
+        </style>
+    </div>
+
+
+    <div class="catalog">
+        <div class="item">
+            <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7b43081a1b.png" width="150">
+            <p>Фруктовий торт</p>
+            <p>269 грн</p>
+        </div>
+        <div class="item">
+            <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7b4998fee5.png" width="150">
+            <p>Рожева квітка</p>
+            <p>169 грн</p>
+        </div>
+        <div class="item">
+            <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7b53a54f7a.png" width="150">
+            <p>Червона любов</p>
+            <p>249 грн</p>
+        </div>
+        <div class="item">
+            <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7b547574d0.png"  width="150">
+            <p>Шоколадний торт</p>
+            <p>166 грн</p>
+        </div>
+        <div class="item">
+            <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7b5592dfb6.png" width="150">
+            <p>Карамельний чізкейк</p>
+            <p>169 грн</p>
+        </div>
+        <div class="item">
+            <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7b56c76da1.png" width="150">
+            <p>Асорті</p>
+            <p>250 грн</p>
+        </div>
+        <div class="item">
+            <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7e213aea8d.png" width="150">
+            <p>Шоколадний бум</p>
+            <p>328 грн</p>
+        </div>
+        <div class="item">
+            <img src="https://learn.logikaschool.com/uploads/student/2899040/68d7e21ba532c.png" width="150">
+            <p>Торт ніч</p>
+            <p>287 грн</p>
+        </div>
+    </div>
+
+    <div class="container">
+    <div class="title"><h2>Про нас</h2></div>
+
+    <style>
+        .container {
+            max-width: 800px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .title {
+            background-color: #ffe6e6;
+            padding: 10px 40px;
+            border-radius: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            background-color: #ffe6e6;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .delivery-box {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .logo-box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+        }
+
+        .logo {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 30px;
+        }
+
+        .about-us-box {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            font-size: 17px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .stores-box {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .stores-box h2 {
+            margin-top: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .stores-box p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            text-decoration: none;
+            color: #000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+            background-color: #ffcccc;
+        }
+    </style>
+
+    <div class="top-section">
+        <div class="section delivery-box">
+            <p>Швидка, безпечна та доступна доставка у десять міст України: Дніпро, Київ, Харків, Львів тощо.</p>
+        </div>
+
+        <div class="logo-box">
+            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv1oAvbuJfupdOr9Vboqr7Ax-53jJNmH9TQQ&s" alt="Логотип TORTS.UA">
+        </div>
+    </div>
+
+    <div class="section about-us-box">
+        <p>Ми віримо, що торт — це більше, ніж просто насолода. Це кульмінація урочистості, символ радості та щастя. Наша місія — втілити в життя ваші найсміливіші ідеї, перетворивши їх на реальність.</p>
+    </div>
+
+    <div class="section stores-box">
+        <h2>Наші магазини</h2>
+        <p>Вул. Незалежності 36<br>+380 66 537 78 07</p>
+        <p>Пр. Слобожанський<br>+380 96 524 64 62</p>
+        <p>Вул. Миру 69<br>+380 68 163 45 42</p>
+
+        <div class="social-icons">
+            <a class="social-icon" href="https://facebook.com" target="_blank" title="Facebook">📘</a>
+            <a class="social-icon" href="https://instagram.com" target="_blank" title="Instagram">📷</a>
+            <a class="social-icon" href="https://t.me/yourtelegram" target="_blank" title="Telegram">📲</a>
+        </div>
+    </div>
+</div>
+
+    <script>
+     // 1. Знаходимо елемент кошика за ID
+        const cartButton = document.getElementById('cart-button');
+
+        // 2. Вказуємо АДРЕСУ САЙТУ, куди потрібно перенаправити
+        // !!! ОБОВ'ЯЗКОВО ЗАМІНІТЬ ЦЕЙ АДРЕС НА ВАШ РЕАЛЬНИЙ САЙТ ОФОРМЛЕННЯ !!!
+        const checkoutURL = 'https://vash-sait-zakaza.com/oformlennya'; 
+
+        // 3. Додаємо обробник події "клік"
+        if (cartButton) {
+            cartButton.addEventListener('click', function() {
+                // Виконуємо перенаправлення на інший сайт у поточній вкладці
+                window.location.href = checkoutURL;
+
+                // АБО, якщо ви хочете, щоб сайт відкрився у НОВІЙ вкладці:
+                // window.open(checkoutURL, '_blank');
+            });
+        } else {
+            console.error('Елемент кошика з ID "cart-button" не знайдено.');
+        }
+  </script>
+</body>
+</html>
